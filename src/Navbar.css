@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    background-color: brown;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+li {
+    margin-right: 10vw;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
