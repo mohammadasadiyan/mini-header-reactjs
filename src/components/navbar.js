@@ -1,12 +1,12 @@
 import React from 'react'
-import './Navbar.css'
+import styles from './Navbar.module.css'
 const Navbar = () => {
   return (
-    <div className='header'>
-        <nav className='list'>
+    <div className={styles.header}>
+        <nav className={styles.list}>
             <ul>
                 <li>
-                    <a href='#'>
+                    <a style={{fontSize: "20px"}} href='#'>
                         Home
                     </a>
                 </li>

@@ -1,3 +1,9 @@
 .App {
-  background-color: brown;
+  /* background-color: brown; */
+}
+.success {
+  background-color: green;
+}
+.warning {
+  background-color: red;
 }

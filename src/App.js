@@ -1,26 +1,19 @@
-// import logo from './logo.svg';
 import './App.css';
-import Navbar from './navbar';
+// import Navbar from './components/navbar';
+import User from './components/User';
 function App() {
+  const users = [
+    {name: "mohammad", age: 18},
+    {name: "ali", age: 16},
+    {name: "reza", age: 22},
+    {name: "ahmad", age: 25}
+  ]
   return (
     <div className="App">
-      <Navbar/>
+      {users.map((user, index)=> {
+        return <User key={index} name={user.name} age={user.age}/>
+      })}
     </div>
   );
 }
-// props
-// const props = {
-//   salary: 200,
-//   position: "full-time",
-//   company: "kayhan pardaz"
-// }
-// const Job = (props) => {
-//   return (
-//     <div>
-//       <h3>{props.salary}</h3>
-//       <h3>{props.position}</h3>
-//       <h3>{props.company}</h3>
-//     </div>
-//   )
-// }
 export default App;
